@@ -1,0 +1,51 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  height: 100%;
+}
+
+/*nav bar*/
+.nav-container {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 30%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+@media (max-width: 520px) {
+  .nav-container {
+    width: 3em;
+    height: 3em;
+    top: 0;
+    margin-left: 0;
+  }
+
+  .hamburger-lines {
+    background-color: aqua;
+    position: relative;
+    width: 80%;
+    height: 0.4em;
+    margin-left: 10%;
+  }
+
+  #hamburger-line1 {
+    top: 5;
+  }
+
+  #hamburger-line2 {
+  }
+
+  #hamburger-line3 {
+  }
+}
+
+.navigation-list {
+  list-style-type: none;
+  font-size: 2em;
+}
+
+.navigation-list ul {
+  list-style-type: none;
+}
