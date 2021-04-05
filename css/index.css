@@ -1,3 +1,7 @@
+:root {
+  --hamburger-bg-color: rgba(119, 119, 119);
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -9,35 +13,23 @@ body {
 .nav-container {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
-  width: 30%;
+  width: 25%;
   height: 100%;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1080px) {
   .nav-container {
     width: 3em;
     height: 3em;
     top: 0;
-    margin-left: 0;
+    margin: 0.5em 0 0 0.5em;
+    border-radius: 1em;
+    padding: 1%;
   }
 
-  .hamburger-lines {
-    background-color: aqua;
-    position: relative;
-    width: 80%;
-    height: 0.4em;
-    margin-left: 10%;
-  }
-
-  #hamburger-line1 {
-    top: 5;
-  }
-
-  #hamburger-line2 {
-  }
-
-  #hamburger-line3 {
+  .navigation-list {
+    display: none;
   }
 }
 
@@ -48,4 +40,14 @@ body {
 
 .navigation-list ul {
   list-style-type: none;
+}
+
+/*main*/
+main {
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+main h1 {
+  margin: 0;
+  padding: 0;
 }
