@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/index.css" />
     <script src="../js/index.js"></script>
   </head>
+
   <body>
     <header class="nav-container">
       <nav id="navbar">
@@ -17,14 +18,11 @@
           <div id="hamburger-line3"></div>
         </div>
 
+        <div class="logo">
+          <h1>Logo</h1>
+        </div>
         <ul class="navigation-list">
-          <li>
-            dummy text
-            <ul>
-              <li>dummy text2</li>
-              <li>dummy text2</li>
-            </ul>
-          </li>
+          <li><a href="#about-me-anchor" class="nav-link">About me</a></li>
           <li>dummy text</li>
           <li>
             dummy text
@@ -34,29 +32,41 @@
             </ul>
           </li>
           <li>dummy text</li>
-          <li>
-            dummy text
-            <ul>
-              <li>dummy text2</li>
-              <li>dummy text2</li>
-            </ul>
-          </li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>About me</h1>
-      <img
-        src="../img/SlimeGreen.png"
-        alt="Dummy profile picture"
-        width="100px"
-        heigth="100px"
-      />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et
-        nostrum blanditiis inventore quos eveniet eos voluptas neque nesciunt
-        exercitationem.
-      </p>
+      <div class="about-me-block">
+        <div id="about-me-anchor"></div>
+        <div class="about-me">
+          <img
+            src="../img/SlimeGreen.png"
+            alt="Dummy profile picture"
+            width="100px"
+            heigth="100px"
+          />
+          <h1>About me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            et nostrum blanditiis inventore quos eveniet eos voluptas neque
+            nesciunt exercitationem.
+          </p>
+        </div>
+      </div>
     </main>
+    <section>
+      <div class="contact-block">
+        <div class="contact" id="contact">
+          <h1>Contact</h1>
+          <p>Tel: 000 000000000</p>
+          <p>E-Mail: ottonormaltyp@somethingnormal.decomukus</p>
+          <p>Adress: ottonormaltyp 0000</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="something"></div>
+    </section>
   </body>
 </html>
