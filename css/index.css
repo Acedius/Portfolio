@@ -1,6 +1,7 @@
 :root {
   --hamburger-bg-color: rgba(119, 119, 119);
   --link-color: black;
+  --shape-bg-color: rgb(255, 255, 255, 0.8);
 }
 
 body {
@@ -8,10 +9,6 @@ body {
   margin: 0;
   background-color: black;
   height: 100%;
-}
-
-.logo {
-  font-size: 3em;
 }
 
 /*nav bar*/
@@ -39,6 +36,10 @@ body {
   }
 }
 
+.logo {
+  font-size: 3em;
+}
+
 .navigation-list {
   list-style-type: none;
   font-size: 2em;
@@ -60,69 +61,53 @@ body {
   color: var(--link-color);
 }
 
-/*section-boxes*/
-.about-me,
-.contact,
-.something {
-  background-color: rgb(255, 255, 255, 0.9);
-  width: 50%;
-  height: auto;
-  position: absolute;
-  right: 2em;
-  padding: 2em;
-  margin: 4em;
-  margin-top: 10em;
-  border-radius: 2em;
-}
+/*shared background for content*/
 
-/*main*/
-main {
+/*about-me*/
+.about-me-section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 0;
   position: relative;
 }
 
-.about-me img {
+.square-background {
+  position: absolute;
+  background: var(--shape-bg-color);
+  padding: 3em;
+  width: 40%;
+  right: 2em;
+  top: 2em;
+  margin: 3em;
+}
+
+.about-me-section img {
   background-color: black;
-  border-radius: 5em;
-  float: left;
+  border-radius: 50%;
 }
 
-.about-me h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 3em;
-  float: left;
-  margin-left: 1em;
-  margin-top: 0.5em;
-}
-
-@media (max-width: 1080px) {
-  .about-me h1 {
-    font-size: 2.5em;
-  }
-
-  @media (max-width: 640px) {
-    .about-me {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .about-me h1 {
-      margin-left: 0;
-    }
-  }
-}
-
-.about-me p {
-  float: left;
+.about-me-section h1 {
   font-size: 2em;
+  margin: 0;
+}
+
+.about-me-section p {
+  font-size: 1.5em;
 }
 
 /*contact*/
-.contact {
+.contact-section {
+  position: relative;
   margin-top: 100%;
 }
 
-.something {
-  margin-top: 200%;
+.triangle-background {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20em solid transparent;
+  border-right: 20em solid transparent;
+  border-bottom: 22em solid var(--shape-bg-color);
+  right: 20%;
 }
