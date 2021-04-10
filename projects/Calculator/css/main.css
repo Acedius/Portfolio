@@ -1,0 +1,58 @@
+body {
+  background-color: blanchedalmond;
+}
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+/*calculator body*/
+.calculator {
+  background-color: white;
+  width: 30%;
+  height: 650px;
+  margin-left: 35%;
+  margin-top: -20px;
+}
+
+/*display*/
+.display {
+  background-color: rgb(6, 6, 51);
+  width: 100%;
+  height: 130px;
+}
+
+#history-value,
+#result-value {
+  text-align: right;
+  color: white;
+  margin-top: 10px;
+}
+
+#history-value {
+  font-size: 2rem;
+}
+
+#result-value {
+  font-size: 3rem;
+}
+
+#history {
+  background-color: rgb(4, 4, 39);
+  height: 60px;
+}
+
+.numpad {
+  margin-left: 30px;
+}
+
+/*numpad buttons*/
+.numpad button {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin: 15px;
+  font-size: 40px;
+}

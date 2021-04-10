@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/index.js" async></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-question" id="container-question">
+        <div class="container-quest-pic">
+          <label for="numberPictures"
+            >How many different pictures do you want?</label
+          >
+          <select name="number-pictures" id="number-pictures">
+            <option disabled selected value>Choose one</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <div
+          class="container-quest-pair"
+          id="container-quest-pair"
+          style="display: none"
+        >
+          <label for="number-pairs"
+            >How many pairs of pictures do you want to find?</label
+          >
+          <input type="text" name="number-pair" id="number-pair" />
+        </div>
+        <button id="submit-button" style="display: none">Start Game!</button>
+      </div>
+      <div class="playing-field" id="playing-field" style="display: none">
+        <h1>Playing Field</h1>
+        <p>
+          Lives left: <span id="left-lives"></span> Pairs left:
+          <span id="left-pic"></span> How many to pair:
+          <span id="left-pair"></span>
+        </p>
+        <div class="picture-field" id="picture-field"></div>
+      </div>
+    </div>
+    <div class="modal-bg" id="modal-bg" style="display: none">
+      <div class="modal-text">
+        <p id="result-text"></p>
+        <button class="modal-button" id="restart-button">Restart</button>
+      </div>
+    </div>
+  </body>
+</html>

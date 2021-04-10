@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-counter {
+  font-size: 4em;
+  margin: 1em;
+  margin-bottom: 0.5em;
+}
+
+.counter {
+  font-size: 5em;
+}
+
+.counter-button {
+  padding: 0.6em;
+  font-size: 1em;
+  margin: 0.5em;
+}

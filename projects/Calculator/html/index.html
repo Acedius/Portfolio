@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="calculator">
+      <div class="display">
+        <div id="history">
+          <p id="history-value"></p>
+        </div>
+        <div id="result">
+          <p id="result-value"></p>
+        </div>
+      </div>
+      <div class="numpad">
+        <button type="button" onclick="addToCalculation('(')">(</button>
+        <button type="button" onclick="addToCalculation(')')">)</button>
+        <button type="button" onclick="addToCalculation('%')">%</button>
+        <button type="button" onclick="resetCalculation()">AC</button>
+        <button type="button" onclick="addToCalculation('7')">7</button>
+        <button type="button" onclick="addToCalculation('8')">8</button>
+        <button type="button" onclick="addToCalculation('9')">9</button>
+        <button type="button" onclick="addToCalculation('/')">/</button>
+        <button type="button" onclick="addToCalculation('4')">4</button>
+        <button type="button" onclick="addToCalculation('5')">5</button>
+        <button type="button" onclick="addToCalculation('6')">6</button>
+        <button type="button" onclick="addToCalculation('*')">*</button>
+        <button type="button" onclick="addToCalculation('1')">1</button>
+        <button type="button" onclick="addToCalculation('2')">2</button>
+        <button type="button" onclick="addToCalculation('3')">3</button>
+        <button type="button" onclick="addToCalculation('-')">-</button>
+        <button type="button" onclick="addToCalculation('0')">0</button>
+        <button type="button" onclick="addToCalculation('.')">.</button>
+        <button type="button" onclick="printResult()">=</button>
+        <button type="button" onclick="addToCalculation('+')">+</button>
+      </div>
+    </div>
+  </body>
+</html>

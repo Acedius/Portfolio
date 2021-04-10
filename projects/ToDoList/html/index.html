@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <h1>ToDo List</h1>
+    <!--Form to add item-->
+    <div class="container" id="container">
+      <form>
+        <label for="input">Add Item to list</label>
+        <input type="text" id="input" name="input" />
+        <input type="button" value="Add" onclick="addItem()" />
+      </form>
+    </div>
+    <!--Display of added Items-->
+    <div class="list">
+      <ul id="list"></ul>
+    </div>
+  </body>
+</html>

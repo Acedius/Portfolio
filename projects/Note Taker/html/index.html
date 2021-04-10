@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Taker</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/index.js"></script>
+  </head>
+  <body>
+    <h1>Note Taker</h1>
+
+    <div class="container">
+      <label for="userInput">Note:</label>
+      <textarea
+        name="userInput"
+        id="userInput"
+        cols="30"
+        rows="10"
+        class="userInput"
+      ></textarea>
+      <button onclick="addNote()">Add Note</button>
+    </div>
+    <div class="container-notes" id="container-notes"></div>
+
+    <div class="modal-bg" id="modal-bg" style="display: none">
+      <div class="modal-text-field">
+        <button id="modal-button" onclick="closeButton()"></button>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+  </body>
+</html>
